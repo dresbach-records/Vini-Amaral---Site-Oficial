@@ -1,0 +1,21 @@
+.footer {
+  background: var(--dark2);
+  padding: 40px;
+  border-top: 1px solid rgba(201, 168, 76, 0.1);
+  text-align: center;
+}
+
+.footerLogo {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.footerCopy {
+  font-family: var(--font-cormorant), serif;
+  font-size: 0.8rem;
+  color: var(--gray);
+}

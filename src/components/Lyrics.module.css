@@ -1,0 +1,130 @@
+.lyricsSection {
+  padding: 100px 40px;
+  background: var(--dark2);
+}
+
+.sectionTag, .sectionTitle, .sectionSubtitle {
+  text-align: center;
+}
+
+.sectionTag {
+  font-family: var(--font-oswald), sans-serif;
+  font-weight: 200;
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.sectionTitle {
+  font-family: var(--font-playfair), serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.sectionTitle em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.sectionSubtitle {
+  font-family: var(--font-cormorant), serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gray-light);
+  margin-bottom: 48px;
+}
+
+.lyricsTabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 48px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lyricsTab {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray);
+  padding: 10px 20px;
+  border: 1px solid rgba(201,168,76,0.15);
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.lyricsTab.active, .lyricsTab:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.06);
+}
+
+.lyricsPanel {
+  display: none;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s;
+}
+
+.lyricsPanel.active {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.lyricsStory {
+    background: var(--dark);
+    border: 1px solid rgba(201,168,76,0.2);
+    padding: 32px;
+    margin-bottom: 20px;
+}
+
+.lyricsStoryLabel {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.lyricsStoryText {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    color: var(--gray-light);
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.lyricsText, .lyricsPhonetic {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  line-height: 2;
+  color: var(--gray-light);
+  white-space: pre-line;
+  text-align: center;
+}
+
+.lyricsPhonetic {
+    display: none; /* Hidden for now, maybe for a future feature */
+}
+
+@media (max-width: 768px) {
+  .lyricsSection { padding: 60px 20px; }
+  .lyricsPanel { grid-template-columns: 1fr; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

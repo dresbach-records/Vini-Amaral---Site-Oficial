@@ -1,0 +1,376 @@
+.productCard {
+  background: var(--dark2);
+  border: 1px solid rgba(201, 168, 76, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s, border-color 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+}
+
+.productCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201, 168, 76, 0.35);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(201, 168, 76, 0.06);
+}
+
+.comingSoon {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.comingSoon:hover {
+  transform: none;
+  border-color: rgba(201, 168, 76, 0.1);
+  box-shadow: none;
+}
+
+.productVisual {
+  height: 260px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.productVisualCd {
+  background: linear-gradient(135deg, #0d0d18 0%, #1a1a2e 100%);
+}
+
+.productVisualLp {
+  background: linear-gradient(135deg, #0a0a10 0%, #1a0a0a 100%);
+}
+
+.productVisualBook {
+  background: linear-gradient(135deg, #080d0d 0%, #0a1a15 100%);
+}
+
+.productVisualMerch {
+  background: linear-gradient(135deg, #0d080d 0%, #1a0a1a 100%);
+}
+
+.productVisualComing {
+  background: linear-gradient(135deg, #0a0a0a 0%, #141414 100%);
+}
+
+.iconCd {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #c9a84c 0deg,
+    #8b6a2e 30deg,
+    #c9a84c 60deg,
+    #f5e6c8 90deg,
+    #c9a84c 120deg,
+    #8b6a2e 150deg,
+    #c9a84c 180deg,
+    #f5e6c8 210deg,
+    #c9a84c 240deg,
+    #8b6a2e 270deg,
+    #c9a84c 300deg,
+    #f5e6c8 330deg,
+    #c9a84c 360deg
+  );
+  box-shadow: 0 0 40px rgba(201, 168, 76, 0.3), inset 0 0 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: transform 1s ease;
+}
+
+.productCard:hover .iconCd {
+  transform: rotate(180deg);
+}
+
+.iconCd::after {
+  content: \'\';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--dark);
+  border: 2px solid rgba(201, 168, 76, 0.4);
+}
+
+.iconLp {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50%, #2a2a2a 0%, #111 40%, #1a1a1a 100%);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), 0 0 20px rgba(201, 168, 76, 0.15);
+  position: relative;
+  transition: transform 2s linear;
+  background-image: repeating-conic-gradient(rgba(201, 168, 76, 0.03) 0deg 1deg, transparent 1deg 3deg);
+}
+
+.productCard:hover .iconLp {
+  transform: rotate(360deg);
+  transition: transform 3s linear;
+}
+
+.iconLp::before {
+  content: \'\';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gold) 0%, #8b6a2e 60%, var(--dark) 100%);
+  box-shadow: 0 0 15px rgba(201, 168, 76, 0.4);
+}
+
+.iconLp::after {
+  content: \'\';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--dark);
+  z-index: 1;
+}
+
+.iconBook {
+  width: 100px;
+  height: 130px;
+  background: linear-gradient(135deg, #1a2a20 0%, #0a1a10 100%);
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  border-left: 8px solid var(--gold);
+  box-shadow: 8px 8px 0 rgba(201, 168, 76, 0.15), 0 0 30px rgba(201, 168, 76, 0.1);
+  position: relative;
+  transition: transform 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.productCard:hover .iconBook {
+  transform: rotate(-3deg) scale(1.05);
+}
+
+.iconComing {
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.productBadge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: \'Oswald\', sans-serif;
+  font-weight: 400;
+  font-size: 0.55rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+}
+
+.badgeNew {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.badgeExclusive {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.badgeSigned {
+  background: var(--dark3);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.badgeComing {
+  background: rgba(201, 168, 76, 0.1);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  color: rgba(201, 168, 76, 0.6);
+}
+
+.fanBadge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: \'Oswald\', sans-serif;
+  font-weight: 200;
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 4px 10px;
+}
+
+.productInfo {
+  padding: 24px;
+}
+
+.productCategory {
+  font-family: \'Oswald\', sans-serif;
+  font-weight: 200;
+  font-size: 0.55rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 8px;
+}
+
+.productName {
+  font-family: \'Playfair Display\', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.productName em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.productDesc {
+  font-size: 0.88rem;
+  color: var(--gray);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.productFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid rgba(201, 168, 76, 0.1);
+}
+
+.productPrice {
+  font-family: \'Playfair Display\', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.productPrice span {
+  font-size: 0.75rem;
+  color: var(--gray);
+  font-family: \'Oswald\', sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.priceComing {
+  font-family: \'Oswald\', sans-serif;
+  font-weight: 200;
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(201, 168, 76, 0.4);
+}
+
+.btnAdd {
+  background: var(--gold);
+  color: var(--dark);
+  font-family: \'Oswald\', sans-serif;
+  font-weight: 500;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btnAdd::before {
+  content: \'\';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  left: -100%;
+  transition: left 0.4s;
+}
+
+.btnAdd:hover::before {
+  left: 100%;
+}
+
+.btnAdd:hover {
+  background: var(--gold-light);
+}
+
+.btnNotify {
+  background: transparent;
+  color: rgba(201, 168, 76, 0.5);
+  font-family: \'Oswald\', sans-serif;
+  font-weight: 200;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btnNotify:hover {
+  border-color: rgba(201, 168, 76, 0.5);
+  color: rgba(201, 168, 76, 0.8);
+}
+
+.productDetails {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  border-top: 0px solid rgba(201, 168, 76, 0.1);
+}
+
+.productDetails.open {
+  max-height: 200px;
+  border-top: 1px solid rgba(201, 168, 76, 0.1);
+}
+
+.detailsInner {
+  padding: 16px 24px;
+}
+
+.detailRow {
+  display: flex;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.detailKey {
+  font-family: \'Oswald\', sans-serif;
+  font-weight: 200;
+  font-size: 0.58rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray);
+  min-width: 80px;
+}
+
+.detailVal {
+  font-size: 0.85rem;
+  color: var(--gray-light);
+  font-style: italic;
+}

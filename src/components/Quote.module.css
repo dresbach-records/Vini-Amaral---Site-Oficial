@@ -1,0 +1,32 @@
+.quoteSection {
+  background: var(--dark2);
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.quoteText {
+  font-family: var(--font-playfair), serif;
+  font-style: italic;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.quoteText em {
+    font-style: italic;
+    color: var(--gold);
+}
+
+.quoteAttr {
+  font-family: var(--font-oswald), sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  color: var(--gold);
+}
+
+@media (max-width: 480px) {
+  .quoteSection { padding: 60px 20px; }
+  .quoteText { font-size: 1.8rem; }
+}

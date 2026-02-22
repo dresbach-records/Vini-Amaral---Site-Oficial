@@ -1,0 +1,290 @@
+[debug] [2026-02-22T12:57:14.057Z] ----------------------------------------------------------------------
+[debug] [2026-02-22T12:57:14.060Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gm9mcvzb17vv8cla08khrg29vxn3sq4r-firebase-tools-15.1.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2026-02-22T12:57:14.060Z] CLI Version:   15.1.0
+[debug] [2026-02-22T12:57:14.060Z] Platform:      linux
+[debug] [2026-02-22T12:57:14.060Z] Node Version:  v20.19.1
+[debug] [2026-02-22T12:57:14.061Z] Time:          Sun Feb 22 2026 12:57:14 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-02-22T12:57:14.061Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-02-22T12:57:17.603Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:17.604Z] No OAuth tokens found
+[error] Failed to fetch Firebase Project from current Studio Workspace: Unable to refresh auth: not yet authenticated.
+[debug] [2026-02-22T12:57:17.609Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T12:57:17.609Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T12:57:17.609Z] [iam] checking project viniamaral-ba296 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-02-22T12:57:17.610Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:17.610Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:17.610Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T12:57:17.610Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T12:57:17.612Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions [none]
+[debug] [2026-02-22T12:57:17.613Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions x-goog-quota-user=projects/viniamaral-ba296
+[debug] [2026-02-22T12:57:17.613Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-02-22T12:57:17.757Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions 200
+[debug] [2026-02-22T12:57:17.757Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-02-22T12:57:17.758Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:17.759Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:17.759Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T12:57:17.759Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T12:57:17.759Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296 [none]
+[debug] [2026-02-22T12:57:18.030Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296 200
+[debug] [2026-02-22T12:57:18.030Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296 {"projectId":"viniamaral-ba296","projectNumber":"137849701259","displayName":"viniamaral","name":"projects/viniamaral-ba296","resources":{"hostingSite":"viniamaral-ba296"},"state":"ACTIVE","etag":"1_cfb1f519-969b-4c21-9cc5-778e385c4535"}
+[debug] [2026-02-22T12:57:24.630Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:24.631Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:24.631Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T12:57:24.632Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T12:57:24.633Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites pageToken=&pageSize=10
+[debug] [2026-02-22T12:57:25.148Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites 200
+[debug] [2026-02-22T12:57:25.149Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites {"sites":[{"name":"projects/viniamaral-ba296/sites/viniamaral","defaultUrl":"https://viniamaral.web.app","appId":"1:137849701259:web:45462d5e63ad001c6de58e","type":"USER_SITE"},{"name":"projects/viniamaral-ba296/sites/viniamaral-ba296","defaultUrl":"https://viniamaral-ba296.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-02-22T12:57:25.155Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:25.155Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:25.156Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T12:57:25.156Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T12:57:25.156Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites 
+[debug] [2026-02-22T12:57:25.604Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites 200
+[debug] [2026-02-22T12:57:25.606Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites {"sites":[{"name":"projects/viniamaral-ba296/sites/viniamaral","defaultUrl":"https://viniamaral.web.app","appId":"1:137849701259:web:45462d5e63ad001c6de58e","type":"USER_SITE"},{"name":"projects/viniamaral-ba296/sites/viniamaral-ba296","defaultUrl":"https://viniamaral-ba296.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-02-22T12:57:25.610Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:25.611Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:25.611Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T12:57:25.611Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T12:57:25.612Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296/webApps/-/config [none]
+[debug] [2026-02-22T12:57:25.888Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296/webApps/-/config 200
+[debug] [2026-02-22T12:57:25.894Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296/webApps/-/config {"projectId":"viniamaral-ba296","appId":"1:137849701259:web:45462d5e63ad001c6de58e","storageBucket":"viniamaral-ba296.firebasestorage.app","apiKey":"AIzaSyAob6tBYIkioLcSdKkM90LjjqfMu1d8R78","authDomain":"viniamaral-ba296.firebaseapp.com","messagingSenderId":"137849701259","measurementId":"G-2QFJK4NCQ7","projectNumber":"137849701259","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-02-22T12:57:35.555Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:35.555Z] No OAuth tokens found
+[debug] [2026-02-22T12:57:35.556Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T12:57:35.556Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T12:57:35.556Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites/viniamaral-ba296 [none]
+[debug] [2026-02-22T12:57:35.907Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites/viniamaral-ba296 200
+[debug] [2026-02-22T12:57:35.910Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites/viniamaral-ba296 {"name":"projects/viniamaral-ba296/sites/viniamaral-ba296","defaultUrl":"https://viniamaral-ba296.web.app","type":"DEFAULT_SITE"}
+[info] ▲ Next.js 16.1.6 (Turbopack)
+
+[info] - Environments: .env.local
+
+
+[info]   Creating an optimized production build ...
+
+[info] ✓ Compiled successfully in 16.9s
+
+[info]   Running TypeScript ...
+
+[info] Failed to compile.
+
+Type error: Type 'typeof import("/home/user/vini-amaral/src/app/api/orders/[orderID]/capture/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/orders/[orderID]/capture">'.
+  Types of property 'POST' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { orderID: string; }; }) => Promise<NextResponse<any>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ orderID: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ orderID: string; }>; }' is not assignable to type '{ params: { orderID: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'orderID' is missing in type 'Promise<{ orderID: string; }>' but required in type '{ orderID: string; }'.
+
+
+[info] Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2026-02-22T12:58:11.363Z] Error: ENOENT: no such file or directory, open '/home/user/vini-amaral/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-22T13:00:54.874Z] ----------------------------------------------------------------------
+[debug] [2026-02-22T13:00:54.877Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gm9mcvzb17vv8cla08khrg29vxn3sq4r-firebase-tools-15.1.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2026-02-22T13:00:54.878Z] CLI Version:   15.1.0
+[debug] [2026-02-22T13:00:54.878Z] Platform:      linux
+[debug] [2026-02-22T13:00:54.878Z] Node Version:  v20.19.1
+[debug] [2026-02-22T13:00:54.878Z] Time:          Sun Feb 22 2026 13:00:54 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-02-22T13:00:54.879Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-02-22T13:00:58.368Z] No OAuth tokens found
+[debug] [2026-02-22T13:00:58.368Z] No OAuth tokens found
+[error] Failed to fetch Firebase Project from current Studio Workspace: Unable to refresh auth: not yet authenticated.
+[debug] [2026-02-22T13:00:58.375Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:00:58.375Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:00:58.375Z] [iam] checking project viniamaral-ba296 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-02-22T13:00:58.376Z] No OAuth tokens found
+[debug] [2026-02-22T13:00:58.376Z] No OAuth tokens found
+[debug] [2026-02-22T13:00:58.377Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:00:58.377Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:00:58.379Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions [none]
+[debug] [2026-02-22T13:00:58.379Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions x-goog-quota-user=projects/viniamaral-ba296
+[debug] [2026-02-22T13:00:58.380Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-02-22T13:00:58.593Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions 200
+[debug] [2026-02-22T13:00:58.594Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-02-22T13:00:58.597Z] No OAuth tokens found
+[debug] [2026-02-22T13:00:58.603Z] No OAuth tokens found
+[debug] [2026-02-22T13:00:58.603Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:00:58.603Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:00:58.604Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296 [none]
+[debug] [2026-02-22T13:00:58.897Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296 200
+[debug] [2026-02-22T13:00:58.898Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296 {"projectId":"viniamaral-ba296","projectNumber":"137849701259","displayName":"viniamaral","name":"projects/viniamaral-ba296","resources":{"hostingSite":"viniamaral-ba296"},"state":"ACTIVE","etag":"1_cfb1f519-969b-4c21-9cc5-778e385c4535"}
+[debug] [2026-02-22T13:01:04.755Z] No OAuth tokens found
+[debug] [2026-02-22T13:01:04.756Z] No OAuth tokens found
+[debug] [2026-02-22T13:01:04.756Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:01:04.756Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:01:04.758Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites pageToken=&pageSize=10
+[debug] [2026-02-22T13:01:05.156Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites 200
+[debug] [2026-02-22T13:01:05.157Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites {"sites":[{"name":"projects/viniamaral-ba296/sites/viniamaral","defaultUrl":"https://viniamaral.web.app","appId":"1:137849701259:web:45462d5e63ad001c6de58e","type":"USER_SITE"},{"name":"projects/viniamaral-ba296/sites/viniamaral-ba296","defaultUrl":"https://viniamaral-ba296.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-02-22T13:01:05.160Z] No OAuth tokens found
+[debug] [2026-02-22T13:01:05.160Z] No OAuth tokens found
+[debug] [2026-02-22T13:01:05.160Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:01:05.163Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:01:05.163Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites 
+[debug] [2026-02-22T13:01:05.509Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites 200
+[debug] [2026-02-22T13:01:05.512Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites {"sites":[{"name":"projects/viniamaral-ba296/sites/viniamaral","defaultUrl":"https://viniamaral.web.app","appId":"1:137849701259:web:45462d5e63ad001c6de58e","type":"USER_SITE"},{"name":"projects/viniamaral-ba296/sites/viniamaral-ba296","defaultUrl":"https://viniamaral-ba296.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-02-22T13:01:05.515Z] No OAuth tokens found
+[debug] [2026-02-22T13:01:05.515Z] No OAuth tokens found
+[debug] [2026-02-22T13:01:05.515Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:01:05.518Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:01:05.518Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296/webApps/-/config [none]
+[debug] [2026-02-22T13:01:05.768Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296/webApps/-/config 200
+[debug] [2026-02-22T13:01:05.770Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296/webApps/-/config {"projectId":"viniamaral-ba296","appId":"1:137849701259:web:45462d5e63ad001c6de58e","storageBucket":"viniamaral-ba296.firebasestorage.app","apiKey":"AIzaSyAob6tBYIkioLcSdKkM90LjjqfMu1d8R78","authDomain":"viniamaral-ba296.firebaseapp.com","messagingSenderId":"137849701259","measurementId":"G-2QFJK4NCQ7","projectNumber":"137849701259","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-02-22T13:01:18.235Z] No OAuth tokens found
+[debug] [2026-02-22T13:01:18.235Z] No OAuth tokens found
+[debug] [2026-02-22T13:01:18.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:01:18.236Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:01:18.238Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites/viniamaral-ba296 [none]
+[debug] [2026-02-22T13:01:18.529Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites/viniamaral-ba296 200
+[debug] [2026-02-22T13:01:18.533Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites/viniamaral-ba296 {"name":"projects/viniamaral-ba296/sites/viniamaral-ba296","defaultUrl":"https://viniamaral-ba296.web.app","type":"DEFAULT_SITE"}
+[info] ▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+
+[info]   Creating an optimized production build ...
+
+[info] ✓ Compiled successfully in 18.0s
+
+[info]   Running TypeScript ...
+
+[info] Failed to compile.
+
+
+[info] Type error: Type 'typeof import("/home/user/vini-amaral/src/app/api/orders/[orderID]/capture/route")' does not satisfy the constraint 'RouteHandlerConfig<"/api/orders/[orderID]/capture">'.
+  Types of property 'POST' are incompatible.
+    Type '(req: NextRequest, { params }: { params: { orderID: string; }; }) => Promise<NextResponse<any>>' is not assignable to type '(request: NextRequest, context: { params: Promise<{ orderID: string; }>; }) => void | Response | Promise<void | Response>'.
+      Types of parameters '__1' and 'context' are incompatible.
+        Type '{ params: Promise<{ orderID: string; }>; }' is not assignable to type '{ params: { orderID: string; }; }'.
+          Types of property 'params' are incompatible.
+            Property 'orderID' is missing in type 'Promise<{ orderID: string; }>' but required in type '{ orderID: string; }'.
+
+
+[info] Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2026-02-22T13:01:59.057Z] Error: ENOENT: no such file or directory, open '/home/user/vini-amaral/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-02-22T13:11:56.728Z] ----------------------------------------------------------------------
+[debug] [2026-02-22T13:11:56.731Z] Command:       /nix/store/ws50yvm6vzlzf7jzz6n7xh4szddrack1-nodejs-20.19.1/bin/node /nix/store/gm9mcvzb17vv8cla08khrg29vxn3sq4r-firebase-tools-15.1.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2026-02-22T13:11:56.731Z] CLI Version:   15.1.0
+[debug] [2026-02-22T13:11:56.732Z] Platform:      linux
+[debug] [2026-02-22T13:11:56.732Z] Node Version:  v20.19.1
+[debug] [2026-02-22T13:11:56.732Z] Time:          Sun Feb 22 2026 13:11:56 GMT+0000 (Coordinated Universal Time)
+[debug] [2026-02-22T13:11:56.732Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-02-22T13:11:59.735Z] No OAuth tokens found
+[debug] [2026-02-22T13:11:59.736Z] No OAuth tokens found
+[error] Failed to fetch Firebase Project from current Studio Workspace: Unable to refresh auth: not yet authenticated.
+[debug] [2026-02-22T13:11:59.742Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:11:59.743Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:11:59.743Z] [iam] checking project viniamaral-ba296 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-02-22T13:11:59.744Z] No OAuth tokens found
+[debug] [2026-02-22T13:11:59.744Z] No OAuth tokens found
+[debug] [2026-02-22T13:11:59.744Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:11:59.744Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:11:59.766Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions [none]
+[debug] [2026-02-22T13:11:59.766Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions x-goog-quota-user=projects/viniamaral-ba296
+[debug] [2026-02-22T13:11:59.767Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-02-22T13:11:59.919Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions 200
+[debug] [2026-02-22T13:11:59.919Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/viniamaral-ba296:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-02-22T13:11:59.920Z] No OAuth tokens found
+[debug] [2026-02-22T13:11:59.925Z] No OAuth tokens found
+[debug] [2026-02-22T13:11:59.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:11:59.925Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:11:59.926Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296 [none]
+[debug] [2026-02-22T13:12:00.189Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296 200
+[debug] [2026-02-22T13:12:00.192Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296 {"projectId":"viniamaral-ba296","projectNumber":"137849701259","displayName":"viniamaral","name":"projects/viniamaral-ba296","resources":{"hostingSite":"viniamaral-ba296"},"state":"ACTIVE","etag":"1_cfb1f519-969b-4c21-9cc5-778e385c4535"}
+[debug] [2026-02-22T13:12:04.960Z] No OAuth tokens found
+[debug] [2026-02-22T13:12:04.961Z] No OAuth tokens found
+[debug] [2026-02-22T13:12:04.961Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:12:04.961Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:12:04.964Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites pageToken=&pageSize=10
+[debug] [2026-02-22T13:12:05.462Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites 200
+[debug] [2026-02-22T13:12:05.463Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites {"sites":[{"name":"projects/viniamaral-ba296/sites/viniamaral","defaultUrl":"https://viniamaral.web.app","appId":"1:137849701259:web:45462d5e63ad001c6de58e","type":"USER_SITE"},{"name":"projects/viniamaral-ba296/sites/viniamaral-ba296","defaultUrl":"https://viniamaral-ba296.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-02-22T13:12:05.472Z] No OAuth tokens found
+[debug] [2026-02-22T13:12:05.472Z] No OAuth tokens found
+[debug] [2026-02-22T13:12:05.472Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:12:05.473Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:12:05.473Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites 
+[debug] [2026-02-22T13:12:05.802Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites 200
+[debug] [2026-02-22T13:12:05.804Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites {"sites":[{"name":"projects/viniamaral-ba296/sites/viniamaral","defaultUrl":"https://viniamaral.web.app","appId":"1:137849701259:web:45462d5e63ad001c6de58e","type":"USER_SITE"},{"name":"projects/viniamaral-ba296/sites/viniamaral-ba296","defaultUrl":"https://viniamaral-ba296.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-02-22T13:12:05.805Z] No OAuth tokens found
+[debug] [2026-02-22T13:12:05.805Z] No OAuth tokens found
+[debug] [2026-02-22T13:12:05.805Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:12:05.805Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:12:05.806Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296/webApps/-/config [none]
+[debug] [2026-02-22T13:12:06.025Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296/webApps/-/config 200
+[debug] [2026-02-22T13:12:06.029Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/viniamaral-ba296/webApps/-/config {"projectId":"viniamaral-ba296","appId":"1:137849701259:web:45462d5e63ad001c6de58e","storageBucket":"viniamaral-ba296.firebasestorage.app","apiKey":"AIzaSyAob6tBYIkioLcSdKkM90LjjqfMu1d8R78","authDomain":"viniamaral-ba296.firebaseapp.com","messagingSenderId":"137849701259","measurementId":"G-2QFJK4NCQ7","projectNumber":"137849701259","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-02-22T13:12:20.362Z] No OAuth tokens found
+[debug] [2026-02-22T13:12:20.368Z] No OAuth tokens found
+[debug] [2026-02-22T13:12:20.368Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-02-22T13:12:20.368Z] > authorizing via signed-in user (viniamaral2026@gmail.com)
+[debug] [2026-02-22T13:12:20.374Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites/viniamaral-ba296 [none]
+[debug] [2026-02-22T13:12:20.667Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites/viniamaral-ba296 200
+[debug] [2026-02-22T13:12:20.667Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/viniamaral-ba296/sites/viniamaral-ba296 {"name":"projects/viniamaral-ba296/sites/viniamaral-ba296","defaultUrl":"https://viniamaral-ba296.web.app","type":"DEFAULT_SITE"}
+[info] ▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+
+[info]   Creating an optimized production build ...
+
+[info] ✓ Compiled successfully in 19.9s
+
+[info]   Running TypeScript ...
+
+[info] Failed to compile.
+
+./src/app/api/orders/[orderID]/capture/route.ts:7:56
+Type error: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+   5 | const clientSecret = process.env.PAYPAL_CLIENT_SECRET;
+   6 |
+>  7 | const environment = new paypal.core.SandboxEnvironment(clientId, clientSecret);
+     |                                                        ^
+   8 | const client = new paypal.core.PayPalHttpClient(environment);
+   9 |
+  10 | export async function POST(req: NextRequest, context: any) {
+
+[info] Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2026-02-22T13:13:04.205Z] Error: ENOENT: no such file or directory, open '/home/user/vini-amaral/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

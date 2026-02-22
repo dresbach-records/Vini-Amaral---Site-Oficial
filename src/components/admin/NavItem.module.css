@@ -1,0 +1,58 @@
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 20px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gray2);
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.navItem:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.active {
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.06);
+}
+
+.active::before {
+  content: \'\';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--gold);
+}
+
+.navIcon {
+  font-size: 0.9rem;
+  width: 18px;
+  text-align: center;
+}
+
+.navBadge {
+  margin-left: auto;
+  background: var(--gold);
+  color: var(--dark);
+  font-size: 0.5rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.red {
+  background: var(--red);
+}
