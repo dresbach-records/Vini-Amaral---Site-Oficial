@@ -214,7 +214,7 @@
 }
 
 /* SoundCloud embed iframe */
-:global(#sc-embed) {
+.embed_area :global(#sc-embed) {
   width: 100%; height: 166px; border: none;
   display: block;
 }

@@ -27,7 +27,7 @@ const Player = () => {
   const [activeIdx, setActiveIdx] = useState(-1);
   const [scEmbedUrl, setScEmbedUrl] = useState("https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/vini-amaral-748220502&color=%23C9A84C&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false");
 
-  const buildWave = (seed, isActive, playedPct = 0) => {
+  const buildWave = (seed: number, isActive: boolean, playedPct: number = 0) => {
     const bars = 48;
     let html = '';
     for (let i = 0; i < bars; i++) {
@@ -48,7 +48,7 @@ const Player = () => {
     return { __html: html };
   };
 
-  const selectTrack = (idx) => {
+  const selectTrack = (idx: number) => {
     const t = tracks[idx];
 
     if (activeIdx === idx) {

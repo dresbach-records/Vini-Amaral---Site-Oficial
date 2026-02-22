@@ -1,21 +1,16 @@
 {
-  "name": "Vini Amaral - Musician Portfolio",
+  "name": "Vini Amaral - Site Oficial",
   "short_name": "Vini Amaral",
-  "description": "The official portfolio of musician Vini Amaral.",
+  "description": "Site oficial do músico Vini Amaral.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A0A0F",
   "theme_color": "#C9A84C",
   "icons": [
     {
-      "src": "/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
     }
   ]
 }

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Playfair_Display, Oswald, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -29,9 +29,31 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vini Amaral | Artista do Rock Melódico",
-  description: "Músicas que falam o que você sente mas nunca soube dizer.",
+  metadataBase: new URL("https://vinicius-amaral-portfolio.web.app"),
+  title: "Vini Amaral - Site Oficial",
+  description: "Site oficial de Vini Amaral, um cantor e compositor brasileiro de rock melódico.",
+  keywords: "Vini Amaral, rock melódico, música, compositor brasileiro, rock nacional",
+  authors: [{ name: "Vini Amaral" }],
   manifest: "/manifest.json",
+  icons: {
+    icon: "/icon.svg",
+  },
+  openGraph: {
+    title: "Vini Amaral - Nobody Knows",
+    description: "Ouça o novo álbum de Vini Amaral, 'Nobody Knows', uma jornada pelo rock melódico.",
+    images: [{ url: "/images/album-cover.jpg" }],
+    url: "https://vinicius-amaral-portfolio.web.app/",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vini Amaral - Nobody Knows",
+    description: "Ouça o novo álbum de Vini Amaral, 'Nobody Knows'.",
+    images: ["/images/album-cover.jpg"],
+  },
+};
+
+export const viewport: Viewport = {
   themeColor: "#C9A84C",
 };
 
