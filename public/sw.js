@@ -1,1 +1,65 @@
-if(!self.define){let e,s={};const a=(a,n)=>(a=new URL(a+".js",n).href,s[a]||new Promise(s=>{if("document"in self){const e=document.createElement("script");e.src=a,e.onload=s,document.head.appendChild(e)}else e=a,importScripts(a),s()}).then(()=>{let e=s[a];if(!e)throw new Error(`Module ${a} didn’t register its module`);return e}));self.define=(n,i)=>{const t=e||("document"in self?document.currentScript.src:"")||location.href;if(s[t])return;let c={};const o=e=>a(e,t),r={module:{uri:t},exports:c,require:o};s[t]=Promise.all(n.map(e=>r[e]||o(e))).then(e=>(i(...e),c))}}define(["./workbox-4754cb34"],function(e){"use strict";importScripts(),self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"/_next/static/chunks/4bd1b696-096d35a2bd1da3af.js",revision:"096d35a2bd1da3af"},{url:"/_next/static/chunks/591-4219ad34df58929f.js",revision:"4219ad34df58929f"},{url:"/_next/static/chunks/794-37dad9bbc14b04b8.js",revision:"37dad9bbc14b04b8"},{url:"/_next/static/chunks/app/_global-error/page-aba28f88d5781771.js",revision:"aba28f88d5781771"},{url:"/_next/static/chunks/app/_not-found/page-d7718d3e73f0436c.js",revision:"d7718d3e73f0436c"},{url:"/_next/static/chunks/app/layout-693488c15de60ded.js",revision:"693488c15de60ded"},{url:"/_next/static/chunks/app/page-6f97933835971a21.js",revision:"6f97933835971a21"},{url:"/_next/static/chunks/framework-75892d61b920805f.js",revision:"75892d61b920805f"},{url:"/_next/static/chunks/main-app-5e121e015105c680.js",revision:"5e121e015105c680"},{url:"/_next/static/chunks/main-d9350c95cbd5650d.js",revision:"d9350c95cbd5650d"},{url:"/_next/static/chunks/next/dist/client/components/builtin/app-error-aba28f88d5781771.js",revision:"aba28f88d5781771"},{url:"/_next/static/chunks/next/dist/client/components/builtin/forbidden-aba28f88d5781771.js",revision:"aba28f88d5781771"},{url:"/_next/static/chunks/next/dist/client/components/builtin/global-error-6e12913b56f110ca.js",revision:"6e12913b56f110ca"},{url:"/_next/static/chunks/next/dist/client/components/builtin/not-found-aba28f88d5781771.js",revision:"aba28f88d5781771"},{url:"/_next/static/chunks/next/dist/client/components/builtin/unauthorized-aba28f88d5781771.js",revision:"aba28f88d5781771"},{url:"/_next/static/chunks/polyfills-42372ed130431b0a.js",revision:"846118c33b2c0e922d7b3a7676f81f6f"},{url:"/_next/static/chunks/webpack-61c0878386c9b561.js",revision:"61c0878386c9b561"},{url:"/_next/static/css/61ce0f93814a9135.css",revision:"61ce0f93814a9135"},{url:"/_next/static/media/1858f5543ad95bc8-s.woff2",revision:"914ed7a3e9f55683db0ac1b909bf98e9"},{url:"/_next/static/media/28a2004cf8372660-s.woff2",revision:"a81e6c6c3493caf3463c36f633996e92"},{url:"/_next/static/media/393d45a2251e223a-s.woff2",revision:"c88e7854dc9e21b3df900e1e9bbb9791"},{url:"/_next/static/media/3b2a65bc67cf51e8-s.woff2",revision:"4a68bf8ca35241ab8e309f2b0ae1b95d"},{url:"/_next/static/media/47f136985ef5b5cb-s.woff2",revision:"62f762afb90d7743f6916ea0cce473af"},{url:"/_next/static/media/48410f3df60da620-s.woff2",revision:"e1f7cd82031b41027ce3b241bca44c88"},{url:"/_next/static/media/4ead58c4dcc3f285-s.woff2",revision:"774586d4bcb09cb42f38fc490d25b01b"},{url:"/_next/static/media/70b116b8ecb87519-s.woff2",revision:"5084e2acef23ca52690eaace5b418cd7"},{url:"/_next/static/media/7b89a4fd5e90ede0-s.p.woff2",revision:"ec4225ec161bd5285480b6b197e10b2b"},{url:"/_next/static/media/7d6c8ae62d4e6c58-s.woff2",revision:"f7de052b9d6abe04b5a7a87a90509761"},{url:"/_next/static/media/7f06be3f780a819a-s.p.woff2",revision:"18b9fa01ababfc8584a075af6e763c33"},{url:"/_next/static/media/8715d2ed531152f4-s.woff2",revision:"4707efc4a5178d63587bcd41cb9b91c7"},{url:"/_next/static/media/c48b38fe8bb532f3-s.woff2",revision:"3e6270b013fa54e61b296effea15acc2"},{url:"/_next/static/media/eaead17c7dbfcd5d-s.p.woff2",revision:"6da252de0cbc8a69b5d5c2e0e3f67722"},{url:"/_next/static/o54dQP4N7Iq0BCCg6Ke9_/_buildManifest.js",revision:"f4d58a725936c94635b35b3f85e2a011"},{url:"/_next/static/o54dQP4N7Iq0BCCg6Ke9_/_ssgManifest.js",revision:"b6652df95db52feb4daf4eca35380933"},{url:"/file.svg",revision:"d09f95206c3fa0bb9bd9fefabfd0ea71"},{url:"/fotos/CAPA LP.jpg",revision:"39c19a1381b1eda8c27e6bce29bbdd58"},{url:"/fotos/capa lp nobody-knows-Vini Amaral.png",revision:"e9477196aff5790e0160c212f0db630b"},{url:"/fotos/eu poli.JPG",revision:"fa408e2c3515c611d226552682daf732"},{url:"/fotos/watermarked-7dcb9a79-0814-466e-bfcf-42eafe1cdd26.jpg",revision:"443e326b4797b398c8a44cc12e78de92"},{url:"/fotos/watermarked-8618a2de-3166-4874-84c3-b52bcd2c560f.jpg",revision:"703bd41a1ba8f52ebe9d2c996dab3641"},{url:"/fotos/watermarked-e9cc9068-0bf0-4824-a45b-bba3031ab984.png",revision:"82bac049ae1b2db6ce3b4466c0a5043f"},{url:"/globe.svg",revision:"2aaafa6a49b6563925fe440891e32717"},{url:"/icon-192x192.png",revision:"d41d8cd98f00b204e9800998ecf8427e"},{url:"/icon-512x512.png",revision:"d41d8cd98f00b204e9800998ecf8427e"},{url:"/manifest.json",revision:"734b4a0c30714077dac828f3c93865ab"},{url:"/next.svg",revision:"8e061864f388b47f33a1c3780831193e"},{url:"/vercel.svg",revision:"c0af2f507b369b085b35ef4bbe3bcf1e"},{url:"/window.svg",revision:"a2760511c65806022ad20adf74370ff3"}],{ignoreURLParametersMatching:[]}),e.cleanupOutdatedCaches(),e.registerRoute("/",new e.NetworkFirst({cacheName:"start-url",plugins:[{cacheWillUpdate:async({request:e,response:s,event:a,state:n})=>s&&"opaqueredirect"===s.type?new Response(s.body,{status:200,statusText:"OK",headers:s.headers}):s}]}),"GET"),e.registerRoute(/^https:\/\/fonts\.(?:gstatic)\.com\/.*/i,new e.CacheFirst({cacheName:"google-fonts-webfonts",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:31536e3})]}),"GET"),e.registerRoute(/^https:\/\/fonts\.(?:googleapis)\.com\/.*/i,new e.StaleWhileRevalidate({cacheName:"google-fonts-stylesheets",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:604800})]}),"GET"),e.registerRoute(/\.(?:eot|otf|ttc|ttf|woff|woff2|font.css)$/i,new e.StaleWhileRevalidate({cacheName:"static-font-assets",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:604800})]}),"GET"),e.registerRoute(/\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,new e.StaleWhileRevalidate({cacheName:"static-image-assets",plugins:[new e.ExpirationPlugin({maxEntries:64,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\/_next\/image\?url=.+$/i,new e.StaleWhileRevalidate({cacheName:"next-image",plugins:[new e.ExpirationPlugin({maxEntries:64,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:mp3|wav|ogg)$/i,new e.CacheFirst({cacheName:"static-audio-assets",plugins:[new e.RangeRequestsPlugin,new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:mp4)$/i,new e.CacheFirst({cacheName:"static-video-assets",plugins:[new e.RangeRequestsPlugin,new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:js)$/i,new e.StaleWhileRevalidate({cacheName:"static-js-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:css|less)$/i,new e.StaleWhileRevalidate({cacheName:"static-style-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\/_next\/data\/.+\/.+\.json$/i,new e.StaleWhileRevalidate({cacheName:"next-data",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(/\.(?:json|xml|csv)$/i,new e.NetworkFirst({cacheName:"static-data-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(({url:e})=>{if(!(self.origin===e.origin))return!1;const s=e.pathname;return!s.startsWith("/api/auth/")&&!!s.startsWith("/api/")},new e.NetworkFirst({cacheName:"apis",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:16,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(({url:e})=>{if(!(self.origin===e.origin))return!1;return!e.pathname.startsWith("/api/")},new e.NetworkFirst({cacheName:"others",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400})]}),"GET"),e.registerRoute(({url:e})=>!(self.origin===e.origin),new e.NetworkFirst({cacheName:"cross-origin",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:3600})]}),"GET")});
+const CACHE_NAME = 'vini-amaral-v1';
+const urlsToCache = [
+  '/',
+  '/styles/globals.css',
+  // Adicione aqui os caminhos para os principais assets que devem ser cacheados
+  // Ex: '/images/logo.png', '/fonts/Oswald-VariableFont_wght.ttf', etc.
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
+      })
+  );
+});
+
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        // Cache hit - return response
+        if (response) {
+          return response;
+        }
+
+        const fetchRequest = event.request.clone();
+
+        return fetch(fetchRequest).then(
+          response => {
+            // Check if we received a valid response
+            if(!response || response.status !== 200 || response.type !== 'basic') {
+              return response;
+            }
+
+            const responseToCache = response.clone();
+
+            caches.open(CACHE_NAME)
+              .then(cache => {
+                cache.put(event.request, responseToCache);
+              });
+
+            return response;
+          }
+        );
+      })
+    );
+});
+
+self.addEventListener('activate', event => {
+  const cacheWhitelist = [CACHE_NAME];
+
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cacheName => {
+          if (cacheWhitelist.indexOf(cacheName) === -1) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});

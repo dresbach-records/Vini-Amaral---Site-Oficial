@@ -15,8 +15,8 @@ const Hero = () => {
           but never knew how to say.
         </p>
         <div className={styles.heroCta}>
-          <a href="https://soundcloud.com/vini-amaral-748220502?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer" className={styles.btnPrimary}>▶ Listen on SoundCloud</a>
-          <a href="https://www.facebook.com/share/g/1CGhmNgKGi/" target="_blank" rel="noopener noreferrer" className={styles.btnSecondary}>Join on Facebook</a>
+          <a href="https://soundcloud.com/vini-amaral-748220502?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btnPrimary}`}>▶ Listen on SoundCloud</a>
+          <a href="https://www.facebook.com/share/g/1CGhmNgKGi/" target="_blank" rel="noopener noreferrer" className={`${styles.btn} ${styles.btnSecondary}`}>Join on Facebook</a>
         </div>
         <div className={styles.scrollIndicator}>
           <div className={styles.scrollLine}></div>

@@ -1,3 +1,4 @@
+
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Playfair_Display, Oswald, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -35,8 +36,19 @@ export const metadata: Metadata = {
   keywords: "Vini Amaral, rock melódico, música, compositor brasileiro, rock nacional",
   authors: [{ name: "Vini Amaral" }],
   manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Vini Amaral",
+  },
+  other: {
+      "mobile-web-app-capable": "yes",
+      "msapplication-TileColor": "#C9A84C",
+      "msapplication-TileImage": "icons/icon-144.png",
+  },
   icons: {
     icon: "/icon.svg",
+    apple: "/icons/icon-152.png",
   },
   openGraph: {
     title: "Vini Amaral - Nobody Knows",
@@ -55,6 +67,10 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#C9A84C",
+  width: "device-width",
+  initialScale: 1.0,
+  maximumScale: 5.0,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -64,7 +80,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${cormorant.variable} ${playfair.variable} ${oswald.variable} ${jetbrains.variable}`}>{children}</body>
+      <body className={`${cormorant.variable} ${playfair.variable} ${oswald.variable} ${jetbrains.variable}`}>
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                  navigator.serviceWorker
+                    .register('/sw.js')
+                    .then(reg => console.log('SW registrado:', reg.scope))
+                    .catch(err => console.log('SW erro:', err));
+                });
+              }
+            `,
+          }}
+        />
+      </body>
     </html>
   );
 }
