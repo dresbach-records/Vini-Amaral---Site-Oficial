@@ -188,7 +188,7 @@ const Plataformas = () => {
   const row2 = platforms.slice(mid);
 
   return (
-    <div>
+    <div className={styles.plataformasContainer}>
       <div className={styles.section_eyebrow}>Nobody Knows · 2026</div>
       <h2 className={styles.section_title}>Ouça em todas as <em>plataformas</em></h2>
       <div className={styles.section_sub}>Disponível em 29 serviços de streaming · Todo o mundo</div>
