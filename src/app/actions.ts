@@ -2,6 +2,7 @@
 
 import { z } from 'zod'
 
+// Re-applying the fix to trigger a new build
 const schema = z.object({
   email: z.string().min(1, { message: "O email é obrigatório." }).email({ message: 'Endereço de email inválido.' }),
 })
