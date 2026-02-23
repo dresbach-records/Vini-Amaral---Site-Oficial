@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import styles from './Player.module.css';
+import heroStyles from './Hero.module.css'; // Import Hero styles for buttons
 
 const tracks = [
     { num: "01", name: "Somebody Like A Ghost", key: "Am", bpm: "68", duration: "4:20",
@@ -17,7 +18,6 @@ const tracks = [
       url: "https://soundcloud.com/vini-amaral-748220502" },
   ];
 
-// A simple deterministic pseudo-random generator based on a seed
 const seededRandom = (seed: number): number => {
     const x = Math.sin(seed) * 10000;
     return x - Math.floor(x);
@@ -35,9 +35,8 @@ const Player = () => {
       const played = i / bars < playedPct;
       const cls = isActive ? (played ? `${styles.wave_bar} ${styles.played}` : styles.wave_bar) : styles.wave_bar;
       
-      // Use the seeded random generator for deterministic animations
       const randomDuration = 0.4 + seededRandom(seed + i) * 0.8;
-      const randomDelay = seededRandom(seed - i) * 0.5; // Use a different seed for delay
+      const randomDelay = seededRandom(seed - i) * 0.5;
 
       const anim = isActive
         ? `style="height:${h}%;animation:barPulse ${randomDuration}s ${randomDelay}s ease-in-out infinite alternate;"`
@@ -117,10 +116,10 @@ const Player = () => {
               <span>Vini Amaral</span> — Nobody Knows
             </div>
             <div className={styles.footer_actions}>
-              <a href="https://soundcloud.com/vini-amaral-748220502" target="_blank" className={`${styles.btn_sc} ${styles.btn_sc_primary}`}>
+              <a href="https://soundcloud.com/vini-amaral-748220502" target="_blank" rel="noopener noreferrer" className={`${heroStyles.btn} ${styles.btn_sc_primary}`}>
                 ☁ Abrir no SoundCloud
               </a>
-              <a href="https://elasticstage.com/soundcloud/releases/vini-amaral-nobody-knows-album" target="_blank" className={`${styles.btn_sc} ${styles.btn_sc_outline}`}>
+              <a href="https://elasticstage.com/soundcloud/releases/vini-amaral-nobody-knows-album" target="_blank" rel="noopener noreferrer" className={`${heroStyles.btn} ${heroStyles.btnSecondary}`}>
                 ✦ Comprar Álbum
               </a>
             </div>

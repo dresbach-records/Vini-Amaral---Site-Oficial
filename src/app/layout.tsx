@@ -2,6 +2,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Playfair_Display, Oswald, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Script from 'next/script';
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -31,15 +32,15 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vinicius-amaral-portfolio.web.app"),
-  title: "Vini Amaral - Site Oficial",
-  description: "Site oficial de Vini Amaral, um cantor e compositor brasileiro de rock melódico.",
-  keywords: "Vini Amaral, rock melódico, música, compositor brasileiro, rock nacional",
+  title: "Vini Amaral | Melodic Rock 80s",
+  description: "Vini Amaral - Melodic Rock inspirado nos anos 80. Ouça agora no SoundCloud.",
+  keywords: "Vini Amaral, rock melódico, música, 80s, anos 80, compositor brasileiro, rock nacional, soundcloud",
   authors: [{ name: "Vini Amaral" }],
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Vini Amaral",
+    title: "Vini Amaral | Melodic Rock 80s",
   },
   other: {
       "mobile-web-app-capable": "yes",
@@ -51,26 +52,24 @@ export const metadata: Metadata = {
     apple: "/icons/icon-152.png",
   },
   openGraph: {
-    title: "Vini Amaral - Nobody Knows",
-    description: "Ouça o novo álbum de Vini Amaral, 'Nobody Knows', uma jornada pelo rock melódico.",
+    title: "Vini Amaral | Melodic Rock 80s",
+    description: "Vini Amaral - Melodic Rock inspirado nos anos 80. Ouça agora no SoundCloud.",
     images: [{ url: "/images/album-cover.jpg" }],
     url: "https://vinicius-amaral-portfolio.web.app/",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vini Amaral - Nobody Knows",
-    description: "Ouça o novo álbum de Vini Amaral, 'Nobody Knows'.",
+    title: "Vini Amaral | Melodic Rock 80s",
+    description: "Vini Amaral - Melodic Rock inspirado nos anos 80. Ouça agora no SoundCloud.",
     images: ["/images/album-cover.jpg"],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#C9A84C",
+  themeColor: "#0A0A0F",
   width: "device-width",
   initialScale: 1.0,
-  maximumScale: 5.0,
-  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -80,6 +79,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-MB1E5RMJ4V"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-MB1E5RMJ4V');
+              gtag('config', 'AW-17972293044');
+            `,
+          }}
+        />
+      </head>
       <body className={`${cormorant.variable} ${playfair.variable} ${oswald.variable} ${jetbrains.variable}`}>
         {children}
         <script
