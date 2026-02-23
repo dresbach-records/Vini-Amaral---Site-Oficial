@@ -3,10 +3,7 @@
 import { z } from 'zod'
 
 const schema = z.object({
-  email: z.string({
-    invalid_type_error: 'Email inválido',
-    required_error: 'O email é obrigatório.',
-  }).email({ message: 'Endereço de email inválido.' }),
+  email: z.string().min(1, { message: "O email é obrigatório." }).email({ message: 'Endereço de email inválido.' }),
 })
 
 export async function saveEmail(prevState: any, formData: FormData) {

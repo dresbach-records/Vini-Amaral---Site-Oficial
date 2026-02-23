@@ -31,7 +31,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vinicius-amaral-portfolio.web.app"),
+  metadataBase: new URL("https://www.viniamaral.click/"),
   title: "Vini Amaral | Melodic Rock 80s",
   description: "Vini Amaral - Melodic Rock inspirado nos anos 80. Ouça agora no SoundCloud.",
   keywords: "Vini Amaral, rock melódico, música, 80s, anos 80, compositor brasileiro, rock nacional, soundcloud",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Vini Amaral | Melodic Rock 80s",
     description: "Vini Amaral - Melodic Rock inspirado nos anos 80. Ouça agora no SoundCloud.",
     images: [{ url: "/images/album-cover.jpg" }],
-    url: "https://vinicius-amaral-portfolio.web.app/",
+    url: "https://www.viniamaral.click/",
     type: "website"
   },
   twitter: {
